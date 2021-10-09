@@ -32,7 +32,8 @@ func main() {
 	
 	//get environment port
 	//to fix heroku port
-	port, err := os.Getenv("PORT")
+	var port
+	err := os.Getenv("PORT")
 	if err != nil {
 		port = "3000"
 	} 
