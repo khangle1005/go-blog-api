@@ -28,5 +28,13 @@ func main() {
 	tag.InitialMigration()
 	app := fiber.New()
 	Routers(app)
-	app.Listen(":3000")
+	
+	//get environment port
+	//to fix heroku port
+	port, err := os.Getenv("PORT")
+	if err != nil {
+		port = "3000"
+	} 
+	
+	app.Listen(":"+port)
 }
