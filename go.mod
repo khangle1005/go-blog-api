@@ -1,7 +1,7 @@
 module example.com/go-blog-api
 
-// +heroku goVersion go1.9
-go 1.9
+// +heroku goVersion go1.11
+go 1.11
 
 require (
 	github.com/andybalholm/brotli v1.0.3 // indirect
