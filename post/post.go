@@ -11,7 +11,11 @@ import (
 var DB *gorm.DB
 var err error
 
-const DNS = "root:@tcp(127.0.0.1:3306)/blog?charset=utf8mb4&parseTime=True&loc=Local"
+//for localhost
+//const DNS = "root:@tcp(127.0.0.1:3306)/blog?charset=utf8mb4&parseTime=True&loc=Local"
+
+//for remote database
+const DNS = "b84d42076320a0:7b1f1e3e@tcp(us-cdbr-east-04.cleardb.com:3306)/heroku_ff75c840cfdb1d8?charset=utf8mb4&parseTime=True&loc=Local"
 
 type Post struct {
 	gorm.Model
