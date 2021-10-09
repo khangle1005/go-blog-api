@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"example.com/go-blog-api/post"
 	"example.com/go-blog-api/tag"
 	"github.com/gofiber/fiber/v2"
