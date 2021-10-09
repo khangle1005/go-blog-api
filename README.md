@@ -1,5 +1,6 @@
 ### CRUD api - Fiber - GORM
-
+### Heroku app
+- `https://golang-blog-api.herokuapp.com/api/post`
 ### Install
 ```
 go get github.com/gofiber/fiber/v2
