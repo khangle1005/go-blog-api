@@ -8,7 +8,6 @@ import (
 )
 
 func Routers(app *fiber.App) {
-
 	//posts api
 	app.Get("/api/post", post.GetPosts)
 	app.Get("/api/post/:id", post.GetPost)
